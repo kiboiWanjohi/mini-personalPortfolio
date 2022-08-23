@@ -9,7 +9,6 @@ body {
   font-family: "Joan", serif;
   height: 100%;
 }
-
 .main {
   display: flex;
   flex-direction: column;
@@ -66,19 +65,20 @@ img {
 
 .nav-menu {
   position: fixed;
-  left: -100%;
+  right: -100%;
   top: 5rem;
   flex-direction: column;
-  background-color: #fff;
-  width: 100%;
+  background-color: rgb(141, 141, 192);
+  width: 40%;
   border-radius: 10px;
   text-align: center;
   transition: 0.3s;
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  color: white;
 }
 
 .nav-menu.active {
-  left: 0;
+  right: 0;
 }
 
 .nav-item {
@@ -88,4 +88,17 @@ img {
 .hamburger {
   display: block;
   cursor: pointer;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgb(26, 24, 24);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 85%;
 }
