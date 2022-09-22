@@ -1,60 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Joan&family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap');*{
-    margin: none;
-    padding: none;
-    border: none;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Edu+NSW+ACT+Foundation:wght@500&family=Mukta:wght@300&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: none;
+  padding: none;
+  border: none;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Joan', serif;
+body {
+  font-family: "Mukta", serif;
+  height: 100%;
+  background-color: #475874;
+  color: white;
+  font-size: 18px;
 }
-.top-main{
-    display: flex;
-    flex-direction: column;
-    background-image: url('./images/div-1-background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 75vh;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-header{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
+.navbar {
+  height: 30px;
 }
-.connect{
-    font-size: 24px;
-    text-decoration: none;
-    color: rgb(240, 206, 206);
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(57, 31, 105);
+  margin: 6px 0;
+  transition: 0.4s;
 }
-.top-main header a:hover{
-    color: aliceblue;
-    cursor: pointer;
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
-.intro{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 40vh;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+
+.change .bar2 {
+  opacity: 0;
 }
-#first{
-    color: aliceblue;
-    font-size: 22px;
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
-#second{
-    color: aliceblue;
-    font-size: 18px;
+li {
+  list-style: none;
 }
-.intro button{
-    border: 2px solid rgb(156, 156, 233);
-    font-family: 'Ubuntu';
-    font-size: 18px;
-    background-color: aliceblue;
+.nav-link {
+  text-decoration: none;
+  color: white;
 }
-.intro button a{
-    text-decoration: none;
-    color: rgb(156, 156, 233);
-    width: 25%;
+.nav-link:hover {
+  text-decoration: underline;
+}
+#profile {
+  border-radius: 50%;
+  width: 200px;
+}
+.links > a {
+  text-decoration: none;
+  color: white;
+}
+.links {
+  letter-spacing: 12px;
+}
+
+.nav-menu {
+  position: fixed;
+  right: -100%;
+  top: 5rem;
+  flex-direction: column;
+  background-color: rgb(57, 31, 105);
+  width: 40%;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  color: white;
+}
+
+.nav-menu.active {
+  right: 0;
+}
+
+.nav-item {
+  margin: 2.5rem 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgb(26, 24, 24);
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 65%;
+  margin-bottom: 20px;
+}
+.card a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #283141;
+
+  border-radius: 14px;
+}
+.card a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.onprogress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#elon-pic,
+#gym-pic,
+#bot-pic,
+#path-pic,
+#gatsby-pic {
+  border-radius: 5px 5px 0 0;
+  width: 40%;
 }
